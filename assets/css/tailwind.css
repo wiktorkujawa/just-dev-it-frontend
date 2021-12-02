@@ -1,0 +1,8 @@
+@import "./objects/o-aspect-ratio.css";
+@import "./settings/settings.css";
+@import "./objects/o-container.css";
+@import './organisms/wysiwyg.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
