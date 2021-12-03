@@ -33,8 +33,6 @@ const Home: NextPage = () => {
 
   return (
     <div className="o-container o-container--xl">
-  
-      <Cwysiwyg field={data.entry.customComponents[0]} />
       <LcustomComponents field={data.entry.customComponents} />
     </div>
     

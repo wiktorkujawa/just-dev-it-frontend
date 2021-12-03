@@ -2,6 +2,8 @@
 @import "./settings/settings.css";
 @import "./objects/o-container.css";
 @import './organisms/wysiwyg.css';
+@import './organisms/footer.css';
+@import './atoms/svg.css';
 
 @tailwind base;
 @tailwind components;

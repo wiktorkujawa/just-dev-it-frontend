@@ -9,6 +9,7 @@ const CcustomComponent:FC<{field: any}> = ({field}) => {
       {
         React.createElement(DynamicComponent(field.typeHandle),
         {
+          // @ts-ignore
           field: field
         }
         )

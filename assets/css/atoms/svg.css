@@ -1,0 +1,16 @@
+.a-svg {
+  display: block;
+}
+
+.a-svg svg {
+  height: inherit;
+  width: inherit;
+}
+
+.a-svg.fill-current [fill] {
+  fill: currentColor;
+}
+
+.a-svg.stroke-current [stroke] {
+  stroke: currentColor;
+}
