@@ -32,7 +32,7 @@ const Home: NextPage = () => {
   console.log(data)
 
   return (
-    <div className="o-container o-container--xl">
+    <div className="p-homepage">
       <LcustomComponents field={data.entry.customComponents} />
     </div>
     

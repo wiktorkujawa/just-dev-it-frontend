@@ -23,8 +23,8 @@ const footerContent = [
 
 const Cfooter = (props: Props) => {
   return (
-    <footer className="c-footer bg-eerie-black text-white overflow-hidden relative">
-      <address>
+    <footer className="c-footer text-white overflow-hidden relative">
+      <address className="bg-eerie-black">
         <table className="table-auto">
           <tbody>
         {
@@ -32,12 +32,12 @@ const Cfooter = (props: Props) => {
             return (
               <Fragment key={key}>
                 <tr>
-                  <td className="uppercase md:px-20 sm:px-10 px-6">
+                  <td className="uppercase md:px-20 sm:px-10 px-6 align-text-top">
                     <h2 className="text-h4">{key}</h2>
                   </td>
-                  <td className="whitespace-pre-wrap py-8 text-p3 sm:text-p1" dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(content)}}/>
+                  <td className="whitespace-pre-wrap py-8 text-p3 sm:text-p1 align-text-top" dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(content)}}/>
                 </tr>
-                <div className="border-b-1 border-accent absolute w-full"/>
+                <tr className="border-b-1 border-accent absolute w-full"/>
               </Fragment>
             )
           })
@@ -55,8 +55,8 @@ const Cfooter = (props: Props) => {
             iconName="github"
           />
           <Abutton 
-            className="text-white fill-current" 
-            href="https://github.com/wiktorkujawa/" 
+            className="text-white fill-current hover:text-linkedin" 
+            href="https://www.linkedin.com/in/wiktor-kujawa-110bb2194/" 
             target="_blank" 
             rel="noreferrer" 
             iconName="linkedin"
@@ -67,6 +67,7 @@ const Cfooter = (props: Props) => {
         </tbody>
       </table>
     </address>
+    <small className="bg-transparent py-10 block text-center w-full">&copy; JUST-DEV-IT.COM | DESIGN: WIKTOR KUJAWA</small>
     </footer>
   )
 }

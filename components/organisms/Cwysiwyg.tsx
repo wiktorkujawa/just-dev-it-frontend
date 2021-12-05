@@ -8,7 +8,7 @@ interface Props {
 }
 const Cwysiwyg: FC<Props> = ({field: { copy }}) => {
   return (
-    <div className="c-wysiwyg my-12" dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(copy)}}/>
+    <div className="c-wysiwyg my-12 o-container o-container--xl" dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(copy)}}/>
   )
 }
 

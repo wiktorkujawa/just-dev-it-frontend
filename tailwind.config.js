@@ -11,7 +11,8 @@ module.exports = {
       colors: {
         'eerie-black': '#212121',
         'mine-shaft': '#303030',
-        'accent': '#ffffff1f'
+        'accent': '#ffffff1f',
+        'linkedin': '#0e76a8'
       },
       borderWidth: {
         1: '1px'
