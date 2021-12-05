@@ -3,12 +3,14 @@ import type { AppProps } from 'next/app'
 import { ApolloProvider } from '@apollo/client'
 import { useApollo } from '../apollo/apolloClient'
 import Cfooter from '../components/organisms/Cfooter'
+import Cheader from '../components/organisms/Cheader'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const apolloClient = useApollo(pageProps)
   return (
     <ApolloProvider client={apolloClient}>
       <main className="main min-h-screen o-container o-container--xl">
+        <Cheader/>
         <div className="bg-mine-shaft py-1">
           <Component {...pageProps} />
         </div>
