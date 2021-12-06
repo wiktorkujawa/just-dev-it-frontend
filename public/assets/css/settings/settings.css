@@ -7,6 +7,45 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+.main__dark {
+  & .c-navbar {
+    & div:first-child {
+      & * {
+        @apply text-white bg-eerie-black;
+      }
+    }
+    & div:last-child {
+      @apply text-white bg-eerie-black;
+    }
+  }
+  & div:nth-child(2) {
+    @apply bg-mine-shaft;
+  }
+
+  & address {
+    @apply bg-eerie-black text-white;
+  }
+}
+
+.main__light {
+  & .c-navbar {
+    & div:first-child {
+    & * {
+      @apply text-eerie-black bg-white-smoke;
+      }
+    }
+    & div:last-child {
+      @apply text-eerie-black bg-white-smoke;
+    }
+  }
+  & div:nth-child(2) {
+    @apply bg-white;
+  }
+  & address {
+    @apply bg-white-smoke text-eerie-black;
+  }
+}
+
 a {
   color: inherit;
   text-decoration: none;

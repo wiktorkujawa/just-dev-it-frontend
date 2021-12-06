@@ -3,7 +3,7 @@ import DOMPurify from 'isomorphic-dompurify'
 import Asvg from '../atoms/Asvg'
 import Abutton from '../atoms/Abutton'
 interface Props {
-  
+
 }
 
 const footerContent = [
@@ -22,9 +22,10 @@ const footerContent = [
 ]
 
 const Cfooter = (props: Props) => {
+  
   return (
-    <footer className="c-footer text-white overflow-hidden relative">
-      <address className="bg-eerie-black">
+    <footer className="c-footer overflow-hidden relative">
+      <address>
         <table className="table-auto">
           <tbody>
         {
@@ -48,14 +49,14 @@ const Cfooter = (props: Props) => {
           </td>
           <td className="flex py-8 gap-x-8">
           <Abutton 
-            className="text-white fill-current" 
+            className="fill-current" 
             href="https://github.com/wiktorkujawa/" 
             target="_blank" 
             rel="noreferrer" 
             iconName="github"
           />
           <Abutton 
-            className="text-white fill-current hover:text-linkedin" 
+            className="fill-current hover:text-linkedin" 
             href="https://www.linkedin.com/in/wiktor-kujawa-110bb2194/" 
             target="_blank" 
             rel="noreferrer" 
@@ -67,7 +68,7 @@ const Cfooter = (props: Props) => {
         </tbody>
       </table>
     </address>
-    <small className="bg-transparent py-10 block text-center w-full">&copy; JUST-DEV-IT.COM | DESIGN: WIKTOR KUJAWA</small>
+    <small className="bg-transparent py-10 block text-center text-white w-full">&copy; JUST-DEV-IT.COM | DESIGN: WIKTOR KUJAWA</small>
     </footer>
   )
 }
