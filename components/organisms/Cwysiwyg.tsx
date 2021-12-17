@@ -3,12 +3,13 @@ import DOMPurify from 'dompurify'
 
 interface Props {
   field: {
-    copy: string
+    copy: string,
+    containerMaxWidth: string
   }
 }
-const Cwysiwyg: FC<Props> = ({field: { copy }}) => {
+const Cwysiwyg: FC<Props> = ({field: { copy, containerMaxWidth }}) => {
   return (
-    <div className="c-wysiwyg my-12 o-container o-container--xl" dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(copy)}}/>
+    <div className={`c-wysiwyg text-center my-12 o-container o-container--${containerMaxWidth}`} dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(copy)}}/>
   )
 }
 

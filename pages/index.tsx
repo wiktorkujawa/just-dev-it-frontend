@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
 import { gql, useQuery } from '@apollo/client'
-import Cwysiwyg from '../components/organisms/Cwysiwyg'
 import LcustomComponents from '../components/templates/LcustomComponents'
 
 const entry = gql`
@@ -9,8 +8,10 @@ const entry = gql`
       ...on homepage_homepage_Entry {
         customComponents {
           ...on customComponents_wysiwyg_BlockType {
+            idName
             typeHandle
             copy
+            containerMaxWidth
           }
         }
       }

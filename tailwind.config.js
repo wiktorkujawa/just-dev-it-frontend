@@ -22,13 +22,22 @@ module.exports = {
         h1: [`${40 / 16}rem`, {
           lineHeight: '1.5'
         }],
-        h2: [`${32 / 16}rem`, {
+        h2: [`${36 / 16}rem`, {
           lineHeight: '1.5'
         }],
-        h3: [`${24 / 16}rem`, {
+        h3: [`${32 / 16}rem`, {
           lineHeight: '1.5'
         }],
-        h4: [`${16 / 16}rem`, {
+        h4: [`${28 / 16}rem`, {
+          lineHeight: '1.5'
+        }],
+        h5: [`${24 / 16}rem`, {
+          lineHeight: '1.5'
+        }],
+        h6: [`${20 / 16}rem`, {
+          lineHeight: '1.5'
+        }],
+        h7: [`${16 / 16}rem`, {
           lineHeight: '1.5'
         }],
         p1: [`${16 / 16}rem`, {

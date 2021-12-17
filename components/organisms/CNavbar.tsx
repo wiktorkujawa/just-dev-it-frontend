@@ -36,14 +36,14 @@ const CNavbar = () => {
   }, [darkMode])
   return (
     <div className="flex items-stretch justify-between c-navbar">
-      <div className="flex w-full">
+      <div className="md:flex w-full hidden">
       {
         items.map(({text, href}) => {
           return <Abutton className="py-4 text-center flex-1 justify-center items-center px-4 uppercase" key={href} href={href}> {text} </Abutton>
         })
       }
       </div>
-      <div className="flex gap-x-8 px-8 items-center">
+      <div className="flex gap-x-8 px-8 py-4 md:w-auto w-full justify-between items-center">
       <Abutton 
             className="fill-current" 
             href="https://github.com/wiktorkujawa/" 
