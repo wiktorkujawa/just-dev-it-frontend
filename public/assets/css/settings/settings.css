@@ -25,6 +25,16 @@ body {
   & address {
     @apply bg-eerie-black text-white;
   }
+
+  & .darkmode-element-text {
+    @apply text-white;
+  }
+  & .darkmode-element-bg {
+    @apply bg-eerie-black;
+  }
+  & .darkmode-element-border {
+    @apply bg-accent-dark;
+  }
 }
 
 .main__light {
@@ -43,6 +53,17 @@ body {
   }
   & address {
     @apply bg-white-smoke text-eerie-black;
+  }
+
+  & .darkmode-element-text {
+    @apply text-eerie-black;
+  }
+
+  & .darkmode-element-bg {
+    @apply bg-white-smoke;
+  }
+  & .darkmode-element-border {
+    @apply bg-accent-light;
   }
 }
 

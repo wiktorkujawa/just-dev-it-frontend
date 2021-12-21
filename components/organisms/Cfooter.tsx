@@ -38,7 +38,7 @@ const Cfooter = (props: Props) => {
                   </td>
                   <td className="whitespace-pre-wrap py-8 text-p3 sm:text-p1 align-text-top" dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(content)}}/>
                 </tr>
-                <tr className="border-b-1 border-accent absolute w-full"/>
+                <tr className="border-b-1 darkmode-element-border absolute w-full"/>
               </Fragment>
             )
           })
@@ -49,7 +49,7 @@ const Cfooter = (props: Props) => {
           </td>
           <td className="flex py-8 gap-x-8">
           <Abutton 
-            className="fill-current" 
+            className="fill-current hover:opacity-50" 
             href="https://github.com/wiktorkujawa/" 
             target="_blank" 
             rel="noreferrer" 

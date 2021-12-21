@@ -8,6 +8,11 @@ module.exports = {
     return config;
   },
   reactStrictMode: true,
+  images: {
+    domains: [
+      'd2k0dwyogc7m42.cloudfront.net'
+    ]
+  },
   env: {
     GRAPHQL_URL: process.env.GRAPHQL_URL,
   }

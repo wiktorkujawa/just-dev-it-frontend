@@ -24,26 +24,27 @@ const entry = gql`
   ${projectGridFragment}
 `
 
-const Home: NextPage = () => {
+const Skills: NextPage = () => {
 
-  const { loading, error, data } = useQuery(
-    entry,
-    {
-      variables: { slug: 'homepage'},
-      notifyOnNetworkStatusChange: true,
-    }
-  )
-  if (error) return <div>Error</div>
-  if (loading) return <div>Loading</div>
-  console.log(data)
+  // const { loading, error, data } = useQuery(
+  //   entry,
+  //   {
+  //     variables: { slug: 'homepage'},
+  //     notifyOnNetworkStatusChange: true,
+  //   }
+  // )
+  // if (error) return <div>Error</div>
+  // if (loading) return <div>Loading</div>
+  // console.log(data)
 
   return (
-    <div className="p-homepage">
-      <CprojectGrid field={data.entry.projectGrid} />
-      <LcustomComponents field={data.entry.customComponents} />
+    <div className="p-skills">
+      hello
+      {/* <CprojectGrid field={data.entry.projectGrid} />
+      <LcustomComponents field={data.entry.customComponents} /> */}
     </div>
     
   )
 }
 
-export default Home
+export default Skills

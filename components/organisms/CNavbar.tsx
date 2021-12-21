@@ -6,6 +6,10 @@ interface MenuItem {
   href: string
 }
 
+interface Props {
+  currentTab: string
+}
+
 const items: MenuItem[] = [
   {
     text: 'Info & Projects',
@@ -21,7 +25,7 @@ const items: MenuItem[] = [
   }
 ]
 
-const CNavbar = () => {
+const CNavbar:FC<Props> = ({currentTab}) => {
 
   const [ darkMode, setDarkMode ] = useState(true)
 
@@ -39,13 +43,13 @@ const CNavbar = () => {
       <div className="md:flex w-full hidden">
       {
         items.map(({text, href}) => {
-          return <Abutton className="py-4 text-center flex-1 justify-center items-center px-4 uppercase" key={href} href={href}> {text} </Abutton>
+          return <Abutton className={` ${currentTab === href ? 'bg-red-500':''} py-4 hover:opacity-50 text-center flex-1 justify-center items-center px-4 uppercase`} key={href} href={href}> {text} </Abutton>
         })
       }
       </div>
       <div className="flex gap-x-8 px-8 py-4 md:w-auto w-full justify-between items-center">
       <Abutton 
-            className="fill-current" 
+            className="fill-current hover:opacity-50" 
             href="https://github.com/wiktorkujawa/" 
             target="_blank" 
             rel="noreferrer" 
