@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import { gql, useQuery } from '@apollo/client'
 import LcustomComponents from '../components/templates/LcustomComponents'
 import CprojectGrid, { fragment as projectGridFragment } from '../components/organisms/CprojectGrid'
+import CmainProject from '../components/organisms/CmainProject'
 
 const entry = gql`
   query Entry {
@@ -39,8 +40,9 @@ const Home: NextPage = () => {
 
   return (
     <div className="p-homepage">
-      <CprojectGrid field={data.entry.projectGrid} />
       <LcustomComponents field={data.entry.customComponents} />
+      <CmainProject field={data.entry.projectGrid[0].project[0]} />
+      <CprojectGrid field={data.entry.projectGrid} />
     </div>
     
   )

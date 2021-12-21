@@ -14,7 +14,9 @@ module.exports = {
         'white-smoke': '#f0f0f0',
         'accent-dark': '#ffffff1f',
         'accent-light': '#000001f',
-        'linkedin': '#0e76a8'
+        'linkedin': '#0e76a8',
+        'pink-hover': '#d63384',
+        'red-hover': '#dc3545'
       },
       borderWidth: {
         1: '1px'

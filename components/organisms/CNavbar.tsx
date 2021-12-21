@@ -43,7 +43,7 @@ const CNavbar:FC<Props> = ({currentTab}) => {
       <div className="md:flex w-full hidden">
       {
         items.map(({text, href}) => {
-          return <Abutton className={` ${currentTab === href ? 'bg-red-500':''} py-4 hover:opacity-50 text-center flex-1 justify-center items-center px-4 uppercase`} key={href} href={href}> {text} </Abutton>
+          return <Abutton className={` ${currentTab === href ? 'bg-pink-hover':''} py-4 hover:opacity-50 text-center flex-1 justify-center items-center px-4 uppercase`} key={href} href={href}> {text} </Abutton>
         })
       }
       </div>
