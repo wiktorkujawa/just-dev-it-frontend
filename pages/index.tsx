@@ -36,12 +36,11 @@ const Home: NextPage = () => {
   )
   if (error) return <div>Error</div>
   if (loading) return <div>Loading</div>
-  console.log(data)
 
   return (
     <div className="p-homepage">
       <LcustomComponents field={data.entry.customComponents} />
-      <CmainProject field={data.entry.projectGrid[0].project[0]} />
+      <CmainProject field={data.entry.projectGrid[0]} />
       <CprojectGrid field={data.entry.projectGrid} />
     </div>
     

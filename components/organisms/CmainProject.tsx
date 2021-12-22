@@ -7,10 +7,10 @@ interface Asset {
 }
 interface Props {
   field: {
-    mediaLink: string
+    medialink: string
     button: string
     heading: string
-    projectDescription: string
+    description: string
     media: Asset[]
   }
 }
