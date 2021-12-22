@@ -16,7 +16,7 @@
   }
 
   & a {
-    @apply underline;
+    @apply underline text-red-hover;
 
     &:hover {
       @apply no-underline;
