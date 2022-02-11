@@ -24,7 +24,7 @@ const Mproject:FC<Props> = ({field: {
 }}) => {
   return (
     <article className="m-project">
-      <h2 className="text-h3 text-center mb-5 darkmode-element-text">{ heading }</h2>
+      <h2 className="text-h3 text-center mb-5 dark:text-white text-eerie-black">{ heading }</h2>
       <Abutton href={medialink} passHref={true} target="_blank" className="mb-5 overflow-hidden">
         {
           media && media.length ?
@@ -35,8 +35,8 @@ const Mproject:FC<Props> = ({field: {
         }
       </Abutton>
         <div className="mx-4">
-      <p className="mb-5 text-p3 darkmode-element-text">{description}</p>
-      <Abutton target="_blank" passHref={true} className=" hover:text-red-hover hover:bg-opacity-50 darkmode-element-text darkmode-element-bg rounded border-1 darkmode-element-border py-2 w-full text-center items-center justify-center" href={button}>Full Story</Abutton>
+      <p className="mb-5 text-p3 dark:text-white text-eerie-black">{description}</p>
+      <Abutton target="_blank" passHref={true} className=" hover:text-red-hover hover:bg-opacity-50 dark:text-white text-eerie-black dark:bg-eerie-black bg-white-smoke rounded border-1 dark:bg-accent-dark bg-accent-light py-2 w-full text-center items-center justify-center" href={button}>Full Story</Abutton>
       </div>
     </article>
   )

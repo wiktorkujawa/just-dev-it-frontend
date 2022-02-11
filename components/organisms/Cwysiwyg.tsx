@@ -10,7 +10,7 @@ interface Props {
 }
 const Cwysiwyg: FC<Props> = ({field: { idName, copy, containerMaxWidth }}) => {
   return (
-    <div id={idName} className={`c-wysiwyg darkmode-element-text my-12 o-container o-container--${containerMaxWidth}`} dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(copy)}}/>
+    <div id={idName} className={`c-wysiwyg dark:text-white text-eerie-black my-12 o-container o-container--${containerMaxWidth}`} dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(copy)}}/>
   )
 }
 

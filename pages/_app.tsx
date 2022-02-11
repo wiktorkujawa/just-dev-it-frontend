@@ -13,9 +13,9 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <ApolloProvider client={apolloClient}>
-      <main className="main main__light min-h-screen o-container o-container--xl">
+      <main className="main min-h-screen o-container o-container--xl">
         <Cheader/>
-        <div className="pb-1">
+        <div className="pb-1 dark:bg-mine-shaft bg-white">
           <CNavbar currentTab={router.pathname} />
           <Component {...pageProps} />
         </div>

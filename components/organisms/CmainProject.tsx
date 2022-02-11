@@ -29,7 +29,7 @@ const CmainProject:FC<Props> = ({field: {
         : null
         }
       </Abutton>
-      <Abutton target="_blank" passHref={true} className="mt-10 uppercase hover:text-red-hover hover:bg-opacity-50 darkmode-element-text darkmode-element-bg rounded border-1 darkmode-element-border py-2 text-center items-center justify-center" href="https://github.com/wiktorkujawa">Check out my github projects</Abutton>
+      <Abutton target="_blank" passHref={true} className="mt-10 uppercase hover:text-red-hover hover:bg-opacity-50 dark:text-white text-eerie-black dark:bg-eerie-black bg-white-smoke rounded border-1 dark:bg-accent-dark bg-accent-light py-2 text-center items-center justify-center" href="https://github.com/wiktorkujawa">Check out my github projects</Abutton>
     </article>
   )
 }
