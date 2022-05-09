@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 import Abutton from '../atoms/Abutton'
+import Image from 'next/image'
 
 interface Asset {
   url: string
@@ -29,7 +30,12 @@ const Mproject:FC<Props> = ({field: {
         {
           media && media.length ?
         <div className="o-aspect-ratio o-aspect-ratio--4:3 w-full">
-          <img loading="lazy" className="o-aspect-ratio__content object-cover hover:scale-125 duration-500" src={media[0]?.url} alt={media[0]?.title}/>
+          <Image
+            src={media[0]?.url} 
+            alt={media[0]?.title}
+            layout='fill'
+            className="o-aspect-ratio__content object-cover hover:scale-125 duration-500"
+          />
         </div>
         : null
         }
